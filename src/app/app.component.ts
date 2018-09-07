@@ -24,6 +24,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.rows = [];
+    this.rows = this.cardService.getRows();
   }
 
   start() {

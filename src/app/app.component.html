@@ -17,6 +17,13 @@
     </tr>
   </table>
   <div class="startbtn">
-    <button type="button" class="btn btn-default btn-lg" [disabled]="inGame == true" (click)="start()">Start</button>
+    <button type="button" class="btn btn-primary" [disabled]="inGame == true" (click)="start()">Start</button>
+  </div>
+</div>
+<div class="state">
+  <div class="state-item score">
+    <div class="counter">
+      <span>{{numPairs}}</span>
+    </div>
   </div>
 </div>
